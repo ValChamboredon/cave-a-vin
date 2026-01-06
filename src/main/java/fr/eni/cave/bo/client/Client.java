@@ -15,7 +15,7 @@ import lombok.*;
 public class Client {
 
     @Id
-    @Column(name = "LOGIN", length = 255, nullable = false, unique = true)
+    @Column(name = "LOGIN", nullable = false)
     private String pseudo;
 
     @ToString.Exclude
