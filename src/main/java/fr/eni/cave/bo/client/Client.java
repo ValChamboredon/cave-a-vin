@@ -28,7 +28,7 @@ public class Client {
     @Column(name = "FIRST_NAME", length = 150)
     private String prenom;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JoinColumn(name = "ADRESS_ID")
     private Adresse adresse;
 
