@@ -1,4 +1,4 @@
-package fr.eni.cave;
+package fr.eni.cave.association;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertNull;
