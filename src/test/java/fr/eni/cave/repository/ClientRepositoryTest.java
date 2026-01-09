@@ -11,7 +11,6 @@ import org.springframework.test.context.ActiveProfiles;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
-@ActiveProfiles("test")
 @Slf4j
 class ClientRepositoryTest {
 
