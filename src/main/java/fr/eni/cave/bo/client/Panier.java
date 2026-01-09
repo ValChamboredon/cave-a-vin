@@ -36,4 +36,7 @@ public class Panier {
     @JoinColumn(name = "SHOPPING_CART_ID")
     private List<LignePanier> lignesPanier = new ArrayList<>();
 
+    @ManyToOne(cascade = {CascadeType.PERSIST})
+    @JoinColumn(name = "CLIENT_ID")
+    private Client client;
 }
